@@ -1,6 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { CheckIfObjectContaisItem } from '../generic-methods/checkIfObjectContaisItem';
-import { StudantsService } from '../services/studants.service';
+import { CheckIfObjectContaisItem } from 'src/app/generic-methods/checkIfObjectContaisItem';
+import { StudantsService } from 'src/app/services/studants.service';
+// import { CheckIfObjectContaisItem } from '../generic-methods/checkIfObjectContaisItem';
+// import { StudantsService } from '../services/studants.service';
 
 @Component({
   selector: 'app-root',

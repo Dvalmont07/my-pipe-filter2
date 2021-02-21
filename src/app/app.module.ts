@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './pages/app.component';
+import { AppComponent } from './pages/appComponent/app.component';
 import { MltipleSearchFilterPipe } from './pipes/multipleSearchFilter.pipe';
 
 
