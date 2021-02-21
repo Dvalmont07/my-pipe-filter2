@@ -4,16 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './pages/app.component';
-import { MyFilterPipe } from './pipes/myFilter.pipe';
+import { MltipleSearchFilterPipe } from './pipes/multipleSearchFilter.pipe';
+
 
 @NgModule({
   declarations: [
-    AppComponent, 
-    MyFilterPipe
+    AppComponent,
+    MltipleSearchFilterPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, 
+    AppRoutingModule,
     FormsModule
   ],
   providers: [],
