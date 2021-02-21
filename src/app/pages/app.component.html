@@ -19,7 +19,7 @@
         <th>Street</th>
       </tr>
     </thead>
-    <tbody *ngFor="let aluno of studentsFinalList | myCostumfilter:['Name','Age','Street']:searchBox">
+    <tbody *ngFor="let aluno of studentsFinalList | multipleSearchFilter:['Name','Age','Street']:searchBox">
       <tr>
         <td><span> {{aluno.Name}}</span></td>
         <td><span>{{aluno.Age}} </span></td>
