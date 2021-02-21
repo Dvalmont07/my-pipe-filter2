@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   studentsFinalList: any[] = [];
   searchBox: string = "";
 
-  title = "My Filter Pipe";
+  title = "My Filter Pipe"; 
 
   ngOnInit() {
   

@@ -1,12 +1,28 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div>
+<div >
+  
   <h1>
     Welcome to {{ title }}!
   </h1>
   <input [(ngModel)]="searchBox" placeholder="Type you search" />
 
-  <div *ngFor="let aluno of studentsFinalList | myCostumfilter:['Name','Age','Street']:searchBox" style="text-align: center;">
-    {{aluno.Name}} - {{aluno.Age}} - {{aluno?.Street}}
-  </div>
+  <table class="table table-striped">
+
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Street</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let aluno of studentsFinalList | myCostumfilter:['Name','Age','Street']:searchBox">
+      <tr>
+        <td><span> {{aluno.Name}}</span></td>
+        <td><span>{{aluno.Age}} </span></td>
+        <td><span>{{aluno?.Street}} </span> </td>
+      </tr>
+    </tbody>
+
+
+  </table>
 </div>
- 
