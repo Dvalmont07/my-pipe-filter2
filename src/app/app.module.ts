@@ -3,18 +3,18 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppComponent } from './pages/app.component';
 import { MyFilterPipe } from './pipes/myFilter.pipe';
-
-
 
 @NgModule({
   declarations: [
-    AppComponent, MyFilterPipe
+    AppComponent, 
+    MyFilterPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, FormsModule
+    AppRoutingModule, 
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

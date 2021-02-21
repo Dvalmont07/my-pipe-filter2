@@ -1,0 +1,32 @@
+<div class="content col-md-8">
+  <section class="col-md-12">
+    <header class="">
+      <h1>
+        Welcome to {{ title }}!
+      </h1>
+    </header>
+  </section>
+  <section id="searchBox" class="col-md-12">
+    <input [(ngModel)]="searchBox" placeholder="Type you search"  class="form-control"/>
+  </section>
+  
+  <table class="table table-hover col-md-12 mt-3">
+
+    <thead class="thead-dark">
+      <tr>
+        <th >Name</th>
+        <th>Age</th>
+        <th>Street</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let aluno of studentsFinalList | myCostumfilter:['Name','Age','Street']:searchBox">
+      <tr>
+        <td><span> {{aluno.Name}}</span></td>
+        <td><span>{{aluno.Age}} </span></td>
+        <td><span>{{aluno?.Street}} </span> </td>
+      </tr>
+    </tbody>
+
+
+  </table>
+</div>
